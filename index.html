@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech and Speech to Text Converter</title>
+    
+    <!-- Add Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Text to Speech <span>Converter</span></h1>
+        
+        <!-- Textarea to write or paste text -->
+        <textarea id="text" placeholder="Write anything here....."></textarea>
+        
+        <!-- Row for the dropdown (voice selector) -->
+        <div class="row">
+            <select id="select"></select>
+        </div>
+        
+        <!-- Row for the buttons (Play & Mic) -->
+        <div class="row buttons">
+            <!-- Play button to trigger text-to-speech -->
+            <button id="button">
+                <i class="fas fa-play"></i> Play
+            </button>
+
+            <!-- Mic button to trigger speech-to-text -->
+            <!-- <button id="mic-button">
+                <i class="fas fa-microphone"></i> Speak
+            </button> -->
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
